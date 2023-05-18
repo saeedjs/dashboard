@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پنل کاربری</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header></header>
+
+    <main class="my-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-xxl-2-5">
+            <div style="box-shadow: 6px 8px 58px 0px #0000001a">
+              <div
+                class="w-100 fw-bold justify-content-center align-items-center d-flex"
+                style="height: 200px"
+              >
+                <img
+                  class="w-100 h-100"
+                  src="../images/personal-25.png"
+                  style="object-fit: cover"
+                />
+              </div>
+              <div class="py-4">
+                <a href="/dashboard">
+                  <div
+                    class="text-center fw-bold py-1 mb-4"
+                    style="color: #78bd09; cursor: pointer"
+                  >
+                    داشبورد کاربری
+                  </div>
+                </a>
+                <div
+                  class="text-center fw-bold py-1 mb-4 d-flex align-items-center justify-content-center"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                  style="cursor: pointer"
+                >
+                  <label class="ms-1" style="cursor: pointer"
+                    >اطلاعات کاربری من</label
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="collapse" id="collapseExample">
+                  <a href="/dashboard/information/submit/">
+                    <div
+                      class="text-center fw-bold my-4"
+                      style="cursor: pointer"
+                    >
+                      ثبت اطلاعات
+                    </div>
+                  </a>
+                  <div class="text-center fw-bold my-4" style="cursor: pointer">
+                    آپلود مدارک
+                  </div>
+                  <div class="text-center fw-bold my-4" style="cursor: pointer">
+                    تغییر رمزعبور
+                  </div>
+                </div>
+                <div
+                  class="text-center fw-bold py-1 mb-4 d-flex align-items-center justify-content-center"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample2"
+                  style="cursor: pointer"
+                >
+                  <label class="ms-1" style="cursor: pointer"
+                    >امور ورزشی من</label
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="collapse" id="collapseExample2">
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    شرایط آموزش
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    برنامه های آکادمی
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    تعرفه و تخفیف ها
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    تقویم دوره ها
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    ثبت نام
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    برنامه های من
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    نظر سنجی های فعال
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    صدور و استعالم مدرک
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    هم بازی
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4 p-0 alert"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    اطالاعات مالی
+                  </div>
+                  <!-- <div class="text-center fw-bold my-3" style="cursor: pointer">
+                  مسابقات من
+                </div>
+                <div class="text-center fw-bold my-3" style="cursor: pointer">
+                  تقویم مسابقات
+                </div> -->
+                </div>
+                <div
+                  onclick="alertShow()"
+                  class="text-center fw-bold py-1 mb-4"
+                  style="cursor: pointer"
+                >
+                  مسابقات
+                </div>
+                <div
+                  class="text-center fw-bold py-1 mb-4 d-flex align-items-center justify-content-center"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample3"
+                  style="cursor: pointer"
+                >
+                  <label class="ms-1" style="cursor: pointer">پیام ها</label>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="collapse" id="collapseExample3">
+                  <div
+                    class="text-center fw-bold my-4"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    پیام شخصی
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    اعلان ها / اطلاعیه
+                  </div>
+                  <div
+                    class="text-center fw-bold my-4"
+                    onclick="alertShow()"
+                    style="cursor: pointer"
+                  >
+                    گفتگو (چت)
+                  </div>
+                </div>
+                <div
+                  class="text-center fw-bold py-1 mb-2"
+                  style="cursor: pointer"
+                >
+                  خروج
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-9-5">
+            <!--header-->
+            <div
+              class="py-3"
+              style="
+                box-shadow: 6px 8px 58px 0px #0000001a;
+                /* background-color: #c4c1c1; */
+              "
+            >
+              <div class="w-100 d-flex justify-content-between py-4 px-4">
+                <label class="fw-bold me-2">
+                  سلام <span style="color: red">محمد بهشتی</span> عزیز از شهر
+                  زیبا تبریز
+                </label>
+                <label class="fw-bold me-2"> امروز 4 فروردین 1402 </label>
+              </div>
+            </div>
+            <!--header-->
+            <div class="row justify-content-center g-5 my-1">
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/two-racket-tennis-ball-icons-graphic_24877-23168.avif"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/men.png"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/rank.jpeg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 col-sm-6 col-8 d-flex flex-column align-items-center"
+              >
+                <img
+                  src="../images/download-files.jpg"
+                  class="w-75 object-fit-cover"
+                  style="height: 180px"
+                />
+                <div class="w-100 mt-3 py-1" style="background-color: #78bd09">
+                  <label class="w-100 fw-bold text-center" style="color: #ffff"
+                    >دوره های ثبت نام شده<br />4 دوره</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <script>
+      const alertShow = () => {
+        Swal.fire("این بخش در حال حاضر غیرفعال است");
+      };
+    </script>
+  </body>
+</html>

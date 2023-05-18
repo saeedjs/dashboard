@@ -1,0 +1,155 @@
+@font-face {
+    font-family: iransans;
+    src: url(fonts/IRANSansWeb\(FaNum\).woff2);
+}
+
+* {
+   direction: rtl;
+    font-size: 14px;
+    font-family: "iransans";
+    color: #1E1E1E;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
+
+select {
+    outline: none;
+}
+
+/* 
+.nav-link {
+    color: #1e1e1e !important;
+    border-radius: 0px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #000508;
+    color: #FFFFFF !important;
+    border: 3px solid #000508 !important;
+    min-width: 126px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link.active {
+    opacity: 100%;
+    background-color: #ffffff !important;
+    color: black !important;
+    border-bottom: 3.5px solid #ffc700;
+    font-weight: 700 !important;
+} */
+
+#plotId{left: 0px;}
+
+/* input[type="radio"]::before {
+    content: "";
+    width: 0.90em;
+    height: 0.90em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: #DEC4B8;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 1px solid #FFFF;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+} */
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.custom-radios div {
+    display: inline-block;
+}
+
+.custom-radios input[type=radio] {
+    display: none;
+}
+
+.custom-radios input[type=radio]+label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.custom-radios input[type=radio]+label span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+}
+
+.custom-radios input[type=radio]+label span svg {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-radios input[type=radio]#color-1+label span {
+    background-color: #2ecc71;
+}
+
+.custom-radios input[type=radio]#color-2+label span {
+    background-color: #3498db;
+}
+
+.custom-radios input[type=radio]#color-3+label span {
+    background-color: #f1c40f;
+}
+
+.custom-radios input[type=radio]#color-4+label span {
+    background-color: #e74c3c;
+}
+
+.custom-radios input[type=radio]:checked+label span svg {
+    opacity: 1;
+}
+
+
+

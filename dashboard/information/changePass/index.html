@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>آپلود مدارک</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-2-5 col-xl-3 col-lg-4 col-12">
+            <div style="box-shadow: 6px 8px 58px 0px #0000001a">
+              <div
+                class="w-100 fw-bold justify-content-center align-items-center d-flex"
+                style="height: 200px"
+              >
+                <img class="w-100 h-100" src="/images/personal-25.png" />
+              </div>
+              <div class="py-4 d-flex flex-column align-items-center">
+                <div>
+                  <a href="/dashboard">
+                    <div class="fw-bold py-1 mb-4" style="cursor: pointer">
+                      داشبورد کاربری
+                    </div>
+                  </a>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+                      />
+                    </svg>
+
+                    <label class="me-1" style="color: #78bd09; cursor: pointer"
+                      >اطلاعات کاربری من</label
+                    >
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                    <a href="/dashboard/information/submit/">
+                      <div class="fw-bold my-4" style="cursor: pointer">
+                        ثبت اطلاعات
+                      </div>
+                    </a>
+                    <a href="/dashboard/information/upload/index.html">
+                      <div class="fw-bold my-4" style="cursor: pointer">
+                        آپلود مدارک
+                      </div></a
+                    >
+                    <a href="/dashboard/information/changePass/index.html">
+                      <div
+                        class="fw-bold my-4"
+                        style="color: green; cursor: pointer"
+                      >
+                        تغییر رمزعبور
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample2"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+                      />
+                    </svg>
+
+                    <label class="me-1" style="cursor: pointer"
+                      >امور ورزشی من</label
+                    >
+                  </div>
+                  <div class="collapse" id="collapseExample2">
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      شرایط آموزش
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      برنامه های آکادمی
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      تعرفه و تخفیف ها
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      تقویم دوره ها
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      ثبت نام
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      برنامه های من
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      نظر سنجی های فعال
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      صدور و استعالم مدرک
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      هم بازی
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      اطالاعات مالی
+                    </div>
+                    <!-- <div class="fw-bold my-3" style="cursor: pointer">
+                  مسابقات من
+                </div>
+                <div class="fw-bold my-3" style="cursor: pointer">
+                  تقویم مسابقات
+                </div> -->
+                  </div>
+                  <div
+                    onclick="alertShow()"
+                    class="fw-bold py-1 mb-4"
+                    style="cursor: pointer"
+                  >
+                    مسابقات
+                  </div>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample3"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+                      />
+                    </svg>
+
+                    <label class="me-1" style="cursor: pointer">پیام ها</label>
+                  </div>
+                  <div class="collapse" id="collapseExample3">
+                    <div
+                      class="fw-bold my-4"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      پیام شخصی
+                    </div>
+                    <div
+                      class="fw-bold my-4"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      اعلان ها / اطلاعیه
+                    </div>
+                    <div
+                      class="fw-bold my-4"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      گفتگو (چت)
+                    </div>
+                  </div>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-left"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"
+                      />
+                    </svg>
+                    <label class="me-1" style="cursor: pointer">خروج</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-9-5 col-xl-9 col-lg-8 col-12">
+            <!--header-->
+            <div
+              class="py-3"
+              style="
+                box-shadow: 6px 8px 58px 0px #0000001a;
+                /* background-color: #c4c1c1; */
+              "
+            >
+              <div
+                class="w-100 d-flex justify-content-between flex-wrap py-4 px-4"
+              >
+                <label class="fw-bold me-2 mt-4">
+                  سلام <span style="color: red">محمد بهشتی</span> عزیز از شهر
+                  زیبا تبریز
+                </label>
+                <label class="fw-bold me-2 mt-4"> امروز 4 فروردین 1402 </label>
+              </div>
+            </div>
+            <!--header-->
+            <div
+              class="w-100 text-center fw-bold py-2 my-4"
+              style="
+                box-shadow: 6px 8px 58px 0px #0000001a;
+                background-color: #7adb93;
+                color: #ffff;
+              "
+            >
+              تغییر کلمه عبور
+            </div>
+            <form>
+              <div class="w-100 d-flex flex-column align-items-center">
+                <div
+                  class="p-5 mt-3"
+                  style="border: 1px solid #e3e3e3; border-radius: 5px"
+                >
+                  <input
+                    class="d-block p-2 mb-5"
+                    placeholder="کلمه عبور فعلی"
+                    style="width: 300px; border: 1px solid #e3e3e3"
+                  />
+
+                  <input
+                    class="d-block p-2 my-5"
+                    placeholder="کلمه عبور جدید"
+                    style="width: 300px; border: 1px solid #e3e3e3"
+                  />
+
+                  <input
+                    class="d-block p-2 my-5"
+                    placeholder="تکرار کلمه عبور جدید"
+                    style="width: 300px; border: 1px solid #e3e3e3"
+                  />
+
+                  <input
+                    class="d-block p-2 mt-5"
+                    type="submit"
+                    value="تغییر رمزعبور"
+                    style="
+                      background-color: #265580;
+                      border: none;
+                      width: 300px;
+                      color: #ffff;
+                    "
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/script/bootstrap.bundle.min.js"></script>
+    <script>
+      const alertShow = () => {
+        Swal.fire("این بخش در حال حاضر غیرفعال است");
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>آپلود مدارک</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <style>
+    .rulesText label {
+      font-size: 12px;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .rulesText {
+      line-height: 2.5;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  </style>
+  <body>
+    <main class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-2-5 col-xl-3 col-lg-4 col-12">
+            <div style="box-shadow: 6px 8px 58px 0px #0000001a">
+              <div
+                class="w-100 fw-bold justify-content-center align-items-center d-flex"
+                style="height: 200px"
+              >
+                <img class="w-100 h-100" src="/images/personal-25.png" />
+              </div>
+              <div class="py-4 d-flex flex-column align-items-center">
+                <div>
+                  <a href="/dashboard">
+                    <div class="fw-bold py-1 mb-4" style="cursor: pointer">
+                      داشبورد کاربری
+                    </div>
+                  </a>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                      />
+                    </svg>
+
+                    <label class="me-1" style="color: #78bd09; cursor: pointer"
+                      >اطلاعات کاربری من</label
+                    >
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                    <a href="/dashboard/information/submit/">
+                      <div class="fw-bold my-4" style="cursor: pointer">
+                        ثبت اطلاعات
+                      </div>
+                    </a>
+                    <a href="/dashboard/information/upload/index.html">
+                      <div
+                        class="fw-bold my-4"
+                        style="color: green; cursor: pointer"
+                      >
+                        آپلود مدارک
+                      </div></a
+                    >
+                    <a href="/dashboard/information/changePass/index.html">
+                      <div class="fw-bold my-4" style="cursor: pointer">
+                        تغییر رمزعبور
+                      </div></a
+                    >
+                  </div>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample2"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                      />
+                    </svg>
+
+                    <label class="me-1" style="cursor: pointer"
+                      >امور ورزشی من</label
+                    >
+                  </div>
+                  <div class="collapse" id="collapseExample2">
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      شرایط آموزش
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      برنامه های آکادمی
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      تعرفه و تخفیف ها
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      تقویم دوره ها
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      ثبت نام
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      برنامه های من
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      نظر سنجی های فعال
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      صدور و استعالم مدرک
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      هم بازی
+                    </div>
+                    <div
+                      class="fw-bold my-4 p-0 alert"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      اطالاعات مالی
+                    </div>
+                    <!-- <div class="fw-bold my-3" style="cursor: pointer">
+                  مسابقات من
+                </div>
+                <div class="fw-bold my-3" style="cursor: pointer">
+                  تقویم مسابقات
+                </div> -->
+                  </div>
+                  <div
+                    onclick="alertShow()"
+                    class="fw-bold py-1 mb-4"
+                    style="cursor: pointer"
+                  >
+                    مسابقات
+                  </div>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample3"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                      />
+                    </svg>
+
+                    <label class="me-1" style="cursor: pointer">پیام ها</label>
+                  </div>
+                  <div class="collapse" id="collapseExample3">
+                    <div
+                      class="fw-bold my-4"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      پیام شخصی
+                    </div>
+                    <div
+                      class="fw-bold my-4"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      اعلان ها / اطلاعیه
+                    </div>
+                    <div
+                      class="fw-bold my-4"
+                      onclick="alertShow()"
+                      style="cursor: pointer"
+                    >
+                      گفتگو (چت)
+                    </div>
+                  </div>
+                  <div
+                    class="fw-bold py-1 mb-4 d-flex align-items-center"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-left"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"
+                      />
+                    </svg>
+                    <label class="me-1" style="cursor: pointer">خروج</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-9-5 col-xl-9 col-lg-8 col-12">
+            <!--header-->
+            <div
+              class="py-3"
+              style="
+                box-shadow: 6px 8px 58px 0px #0000001a;
+                /* background-color: #c4c1c1; */
+              "
+            >
+              <div
+                class="w-100 d-flex justify-content-between flex-wrap py-4 px-4"
+              >
+                <label class="fw-bold me-2 mt-4">
+                  سلام <span style="color: red">محمد بهشتی</span> عزیز از شهر
+                  زیبا تبریز
+                </label>
+                <label class="fw-bold me-2 mt-4"> امروز 4 فروردین 1402 </label>
+              </div>
+            </div>
+            <!--header-->
+            <div
+              class="w-100 text-center fw-bold py-2 my-4"
+              style="background-color: #7adb93; color: #ffff"
+            >
+              ارسال تصاویر
+            </div>
+            <div>
+              <!-- <div class="row justify-content-center"> -->
+              <div class="row justify-content-center my-5">
+                <div class="col-xl-9 col-lg-8order-last">
+                  <div class="w-100 rulesText">
+                    <label
+                      >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                      کنید</label
+                    >
+                    <label>
+                      لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری نمایید.
+                    </label>
+                    <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                    <label
+                      >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                      نمایید (jpg - bmp - png - ...)</label
+                    >
+                    <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                    <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                    <label style="color: red"
+                      >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری به
+                      عمل خواهد آمد</label
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                >
+                  <div class="align-items-end">
+                    <div
+                      class="position-relative"
+                      style="
+                        width: 100%;
+                        height: 170px;
+                        background-color: #ffff;
+                        border: 1px solid #e3e3e3;
+                      "
+                    >
+                      <label
+                        for="personal"
+                        class="fw-bold d-flex justify-content-center align-items-center h-100"
+                        >عکس پرسنلی</label
+                      >
+                      <input id="personal" type="file" style="display: none" />
+                      <div
+                        class="position-absolute top-0 mt-3 me-2"
+                        style="cursor: pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="red"
+                          class="bi bi-trash3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button
+                        style="
+                          border: none;
+                          width: 100%;
+                          height: 40px;
+                          background-color: #265580;
+                          color: #ffff;
+                        "
+                      >
+                        ارسال عکس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center my-5">
+                <div class="col-xl-9 col-lg-8order-last">
+                  <div class="w-100 rulesText">
+                    <label
+                      >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                      کنید</label
+                    >
+                    <label>
+                      لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری نمایید.
+                    </label>
+                    <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                    <label
+                      >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                      نمایید (jpg - bmp - png - ...)</label
+                    >
+                    <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                    <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                    <label style="color: red"
+                      >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری به
+                      عمل خواهد آمد</label
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                >
+                  <div class="align-items-end">
+                    <div
+                      class="position-relative"
+                      style="
+                        width: 100%;
+                        height: 170px;
+                        background-color: #ffff;
+                        border: 1px solid #e3e3e3;
+                      "
+                    >
+                      <label
+                        for="personal"
+                        class="fw-bold d-flex justify-content-center align-items-center h-100"
+                        >تصویر شناسنامه</label
+                      >
+                      <input id="personal" type="file" style="display: none" />
+                      <div
+                        class="position-absolute top-0 mt-3 me-2"
+                        style="cursor: pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="red"
+                          class="bi bi-trash3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button
+                        style="
+                          border: none;
+                          width: 100%;
+                          height: 40px;
+                          background-color: #265580;
+                          color: #ffff;
+                        "
+                      >
+                        ارسال عکس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center my-5">
+                <div class="col-xl-9 col-lg-8order-last">
+                  <div class="w-100 rulesText">
+                    <label
+                      >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                      کنید</label
+                    >
+                    <label>
+                      لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری نمایید.
+                    </label>
+                    <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                    <label
+                      >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                      نمایید (jpg - bmp - png - ...)</label
+                    >
+                    <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                    <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                    <label style="color: red"
+                      >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری به
+                      عمل خواهد آمد</label
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                >
+                  <div class="align-items-end">
+                    <div
+                      class="position-relative"
+                      style="
+                        width: 100%;
+                        height: 170px;
+                        background-color: #ffff;
+                        border: 1px solid #e3e3e3;
+                      "
+                    >
+                      <label
+                        for="personal"
+                        class="fw-bold d-flex justify-content-center align-items-center h-100"
+                        >تصویر کارت ملی</label
+                      >
+                      <input id="personal" type="file" style="display: none" />
+                      <div
+                        class="position-absolute top-0 mt-3 me-2"
+                        style="cursor: pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="red"
+                          class="bi bi-trash3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button
+                        style="
+                          border: none;
+                          width: 100%;
+                          height: 40px;
+                          background-color: #265580;
+                          color: #ffff;
+                        "
+                      >
+                        ارسال عکس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center my-5">
+                <div class="col-xl-9 col-lg-8order-last">
+                  <div class="w-100 rulesText">
+                    <label
+                      >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                      کنید</label
+                    >
+                    <label>
+                      لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری نمایید.
+                    </label>
+                    <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                    <label
+                      >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                      نمایید (jpg - bmp - png - ...)</label
+                    >
+                    <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                    <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                    <label style="color: red"
+                      >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری به
+                      عمل خواهد آمد</label
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                >
+                  <div class="align-items-end">
+                    <div
+                      class="position-relative"
+                      style="
+                        width: 100%;
+                        height: 170px;
+                        background-color: #ffff;
+                        border: 1px solid #e3e3e3;
+                      "
+                    >
+                      <label
+                        for="personal"
+                        class="fw-bold d-flex justify-content-center align-items-center h-100"
+                        >تصویر آخرین مدرک تحصیلی</label
+                      >
+                      <input id="personal" type="file" style="display: none" />
+                      <div
+                        class="position-absolute top-0 mt-3 me-2"
+                        style="cursor: pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="red"
+                          class="bi bi-trash3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="green"
+                        class="bi bi-check-lg"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="award">
+                  <div class="row justify-content-center my-5">
+                    <div class="col-xl-9 col-lg-8order-last">
+                      <div class="w-100 rulesText">
+                        <label
+                          >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس"
+                          کلیک کنید</label
+                        >
+                        <label>
+                          لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری
+                          نمایید.
+                        </label>
+                        <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                        <label
+                          >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                          نمایید (jpg - bmp - png - ...)</label
+                        >
+                        <label
+                          >ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label
+                        >
+                        <label
+                          >لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label
+                        >
+                        <label style="color: red"
+                          >در صورت عدم رعایت موارد فوق از صدور کارت عضویت
+                          جلوگیری به عمل خواهد آمد</label
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                    >
+                      <div class="align-items-end">
+                        <div
+                          class="position-relative"
+                          style="
+                            width: 100%;
+                            height: 170px;
+                            background-color: #ffff;
+                            border: 1px solid #e3e3e3;
+                          "
+                        >
+                          <label
+                            for="personal"
+                            class="fw-bold d-flex justify-content-center align-items-center h-100"
+                            >تصویر احکام قهرمانی</label
+                          >
+                          <input
+                            id="personal"
+                            type="file"
+                            style="display: none"
+                          />
+                          <div
+                            class="position-absolute top-0 mt-3 me-2"
+                            style="cursor: pointer"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="20"
+                              fill="red"
+                              class="bi bi-trash3"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <button
+                            style="
+                              border: none;
+                              width: 100%;
+                              height: 40px;
+                              background-color: #265580;
+                              color: #ffff;
+                            "
+                          >
+                            ارسال عکس
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center"
+                  id="awardButton"
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background-color: #7adb93;
+                    border-radius: 100%;
+                    cursor: pointer;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#FFFF"
+                    class="bi bi-plus-lg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div>
+                <div id="certificate">
+                  <div class="row justify-content-center my-5">
+                    <div class="col-xl-9 col-lg-8order-last">
+                      <div class="w-100 rulesText">
+                        <label
+                          >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس"
+                          کلیک کنید</label
+                        >
+                        <label>
+                          لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری
+                          نمایید.
+                        </label>
+                        <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                        <label
+                          >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                          نمایید (jpg - bmp - png - ...)</label
+                        >
+                        <label
+                          >ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label
+                        >
+                        <label
+                          >لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label
+                        >
+                        <label style="color: red"
+                          >در صورت عدم رعایت موارد فوق از صدور کارت عضویت
+                          جلوگیری به عمل خواهد آمد</label
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                    >
+                      <div class="align-items-end">
+                        <div
+                          class="position-relative"
+                          style="
+                            width: 100%;
+                            height: 170px;
+                            background-color: #ffff;
+                            border: 1px solid #e3e3e3;
+                          "
+                        >
+                          <label
+                            for="personal"
+                            class="fw-bold d-flex justify-content-center align-items-center h-100"
+                            >تصویر گواهینامه دوره ها
+                          </label>
+                          <input
+                            id="personal"
+                            type="file"
+                            style="display: none"
+                          />
+                          <div
+                            class="position-absolute top-0 mt-3 me-2"
+                            style="cursor: pointer"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="20"
+                              fill="red"
+                              class="bi bi-trash3"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <button
+                            style="
+                              border: none;
+                              width: 100%;
+                              height: 40px;
+                              background-color: #265580;
+                              color: #ffff;
+                            "
+                          >
+                            ارسال عکس
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center"
+                  id="certificateButton"
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background-color: #7adb93;
+                    border-radius: 100%;
+                    cursor: pointer;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#FFFF"
+                    class="bi bi-plus-lg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="row justify-content-center my-5">
+                <div class="col-xl-9 col-lg-8order-last">
+                  <div class="w-100 rulesText">
+                    <label
+                      >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                      کنید</label
+                    >
+                    <label>
+                      لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری نمایید.
+                    </label>
+                    <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                    <label
+                      >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                      نمایید (jpg - bmp - png - ...)</label
+                    >
+                    <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                    <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                    <label style="color: red"
+                      >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری به
+                      عمل خواهد آمد</label
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                >
+                  <div class="align-items-end">
+                    <div
+                      class="position-relative"
+                      style="
+                        width: 100%;
+                        height: 170px;
+                        background-color: #ffff;
+                        border: 1px solid #e3e3e3;
+                      "
+                    >
+                      <label
+                        for="personal"
+                        class="fw-bold d-flex justify-content-center align-items-center h-100"
+                        >تصویر بیمه ورزشی</label
+                      >
+                      <input id="personal" type="file" style="display: none" />
+                      <div
+                        class="position-absolute top-0 mt-3 me-2"
+                        style="cursor: pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="red"
+                          class="bi bi-trash3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button
+                        style="
+                          border: none;
+                          width: 100%;
+                          height: 40px;
+                          background-color: #265580;
+                          color: #ffff;
+                        "
+                      >
+                        ارسال عکس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center my-5">
+                <div class="col-xl-9 col-lg-8order-last">
+                  <div class="w-100 rulesText">
+                    <label
+                      >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                      کنید</label
+                    >
+                    <label>
+                      لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری نمایید.
+                    </label>
+                    <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                    <label
+                      >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                      نمایید (jpg - bmp - png - ...)</label
+                    >
+                    <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                    <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                    <label style="color: red"
+                      >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری به
+                      عمل خواهد آمد</label
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                >
+                  <div class="align-items-end">
+                    <div
+                      class="position-relative"
+                      style="
+                        width: 100%;
+                        height: 170px;
+                        background-color: #ffff;
+                        border: 1px solid #e3e3e3;
+                      "
+                    >
+                      <label
+                        for="personal"
+                        class="fw-bold d-flex justify-content-center align-items-center h-100"
+                        >تصویر کارت مربیگری</label
+                      >
+                      <input id="personal" type="file" style="display: none" />
+                      <div
+                        class="position-absolute top-0 mt-3 me-2"
+                        style="cursor: pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="red"
+                          class="bi bi-trash3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button
+                        style="
+                          border: none;
+                          width: 100%;
+                          height: 40px;
+                          background-color: #265580;
+                          color: #ffff;
+                        "
+                      >
+                        ارسال عکس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center my-5">
+                <div class="col-xl-9 col-lg-8order-last">
+                  <div class="w-100 rulesText">
+                    <label
+                      >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                      کنید</label
+                    >
+                    <label>
+                      لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری نمایید.
+                    </label>
+                    <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                    <label
+                      >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                      نمایید (jpg - bmp - png - ...)</label
+                    >
+                    <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                    <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                    <label style="color: red"
+                      >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری به
+                      عمل خواهد آمد</label
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+                >
+                  <div class="align-items-end">
+                    <div
+                      class="position-relative"
+                      style="
+                        width: 100%;
+                        height: 170px;
+                        background-color: #ffff;
+                        border: 1px solid #e3e3e3;
+                      "
+                    >
+                      <label
+                        for="personal"
+                        class="fw-bold d-flex justify-content-center align-items-center h-100"
+                        >تصویر کارت داوری</label
+                      >
+                      <input id="personal" type="file" style="display: none" />
+                      <div
+                        class="position-absolute top-0 mt-3 me-2"
+                        style="cursor: pointer"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="red"
+                          class="bi bi-trash3"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button
+                        style="
+                          border: none;
+                          width: 100%;
+                          height: 40px;
+                          background-color: #265580;
+                          color: #ffff;
+                        "
+                      >
+                        ارسال عکس
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+      const alertShow = () => {
+        Swal.fire("این بخش در حال حاضر غیرفعال است");
+      };
+      $("#awardButton").on("click", function () {
+        $("#award").append(`
+           <div class="row justify-content-center my-5">
+            <div class="col-xl-9 col-lg-8order-last">
+              <div class="w-100 rulesText">
+                <label
+                  >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس"
+                  کلیک کنید</label
+                >
+                <label>
+                  لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری
+                  نمایید.
+                </label>
+                <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                <label
+                  >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                  نمایید (jpg - bmp - png - ...)</label
+                >
+                <label
+                  >ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label
+                >
+                <label
+                  >لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label
+                >
+                <label style="color: red"
+                  >در صورت عدم رعایت موارد فوق از صدور کارت عضویت
+                  جلوگیری به عمل خواهد آمد</label
+                >
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+            >
+              <div class="align-items-end">
+                <div
+                  class="position-relative"
+                  style="
+                    width: 100%;
+                    height: 170px;
+                    background-color: #ffff;
+                    border: 1px solid #e3e3e3;
+                  "
+                >
+                  <label
+                    for="personal"
+                    class="fw-bold d-flex justify-content-center align-items-center h-100"
+                    >تصویر احکام قهرمانی</label
+                  >
+                  <input
+                    id="personal"
+                    type="file"
+                    style="display: none"
+                  />
+                  <div
+                    class="position-absolute top-0 mt-3 me-2"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="red"
+                      class="bi bi-trash3"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button
+                    style="
+                      border: none;
+                      width: 100%;
+                      height: 40px;
+                      background-color: #265580;
+                      color: #ffff;
+                    "
+                  >
+                    ارسال عکس
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+      });
+
+      $("#certificateButton").on("click", function () {
+        $("#certificate").append(`
+          <div class="row justify-content-center my-5">
+            <div class="col-xl-9 col-lg-8order-last">
+              <div class="w-100 rulesText">
+                <label
+                  >پس از انتخاب فایل مورد نظر بر روی دکمه "ارسال عکس" کلیک
+                  کنید</label
+                >
+                <label>
+                  لطفا عکس پرسنلی خود را اسکن و در این قسمت بارگذاری
+                  نمایید.
+                </label>
+                <label> (از ارسال عکس های سلفی خودداری شود)</label>
+                <label
+                  >لطفا فقط از فایل های با فرمت استاندارد تصویر استفاده
+                  نمایید (jpg - bmp - png - ...)</label
+                >
+                <label>ابعاد عکس پرسنلی 4×3 و بصورت عمودی اسکن شود</label>
+                <label>لطفا حجم عکس ارسالی کمتر از 1 مگابایت باشد</label>
+                <label style="color: red"
+                  >در صورت عدم رعایت موارد فوق از صدور کارت عضویت جلوگیری
+                  به عمل خواهد آمد</label
+                >
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 col-8 order-md-last order-first"
+            >
+              <div class="align-items-end">
+                <div
+                  class="position-relative"
+                  style="
+                    width: 100%;
+                    height: 170px;
+                    background-color: #ffff;
+                    border: 1px solid #e3e3e3;
+                  "
+                >
+                  <label
+                  for="personal"
+                  class="fw-bold d-flex justify-content-center align-items-center h-100"
+                  >تصویر گواهینامه دوره ها
+                </label>
+                  <input
+                    id="personal"
+                    type="file"
+                    style="display: none"
+                  />
+                  <div
+                    class="position-absolute top-0 mt-3 me-2"
+                    style="cursor: pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="red"
+                      class="bi bi-trash3"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button
+                    style="
+                      border: none;
+                      width: 100%;
+                      height: 40px;
+                      background-color: #265580;
+                      color: #ffff;
+                    "
+                  >
+                    ارسال عکس
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+      });
+    </script>
+  </body>
+</html>
